@@ -32,6 +32,7 @@ public class ConstructTabCompleter implements TabCompleter {
     }
   }
   
+  //getCompletion sert à update la liste que tu renvoies en fonction de ce que la personne a déjà marqué dans le chat
   private List<String> getCompletions(String args, List<String> options) {
     completion.clear();
     StringUtil.copyPartialMatches(args, all, completion);
